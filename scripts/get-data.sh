@@ -40,9 +40,9 @@ fi
 # Unique sort of the sentences in the corpus. Quite a few sentences are replicated,
 # dropping the number of words from about 2.9B to about 0.8B.  Use binary/C ordering.
 export LC_ALL=C
-# for year in 2007 2008 2009 2010 2011; do 
-#   cat training-monolingual/news.${year}.en.shuffled
-# done | sort -u --output=training-monolingual.tokenized/news.20XX.en.shuffled.sorted
+for year in 2007 2008 2009 2010 2011; do 
+  cat training-monolingual/news.${year}.en.shuffled
+done | sort -u --output=training-monolingual.tokenized/news.20XX.en.shuffled.sorted
 echo "Done sorting corpus."
 
 # Set environemnt vars LANG and LANGUAGE to make sure all users have the same 
