@@ -52,11 +52,11 @@ export LANGUAGE=en_US:
 export LC_ALL=en_US.UTF-8
 
 echo "Working on training-monolingual/news.20XX.en.shuffled.sorted"
-time cat training-monolingual.tokenized/news.20XX.en.shuffled.sorted > \
+time cat training-monolingual.tokenized/news.20XX.en.shuffled.sorted > training-monolingual.tokenized/news.20XX.en.shuffled.sorted.tokenized
 # time cat training-monolingual.tokenized/news.20XX.en.shuffled.sorted | \
 #  ./scripts/normalize-punctuation.perl -l en | \
 #  ./scripts/tokenizer.perl -l en > \
-  training-monolingual.tokenized/news.20XX.en.shuffled.sorted.tokenized
+#  training-monolingual.tokenized/news.20XX.en.shuffled.sorted.tokenized
 echo "Done working on training-monolingual/news.20XX.en.shuffled."
 
 # Split the data in 100 shards
